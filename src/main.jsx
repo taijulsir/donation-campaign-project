@@ -8,11 +8,14 @@ import {
 import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
 import DonationDetails from './Components/DonationDetails/DonationDetails';
+import DonationItem from './Components/DonationItem/DonationItem';
+import Errorpage from './Components/ErrorPage/Errorpage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Errorpage></Errorpage>,
     children: [
       {
         path: '/',
@@ -22,6 +25,11 @@ const router = createBrowserRouter([
       {
         path: '/donations/:id',
         element: <DonationDetails></DonationDetails>,
+        loader: () => fetch('/category.json')
+      },
+      {
+        path: '/donation',
+        element: <DonationItem></DonationItem>,
         loader: () => fetch('/category.json')
       },
     ]

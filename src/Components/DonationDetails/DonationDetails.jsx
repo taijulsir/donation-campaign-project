@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import { saveDonationItem } from '../Utility/localstorage';
 
 const DonationDetails = () => {
     const details = useLoaderData();
@@ -8,7 +9,7 @@ const DonationDetails = () => {
     const donation = details.find(donationDetails => donationDetails.id === idInt)
 
     const handleDonationBtn = () => {
-       
+       saveDonationItem(idInt)
         Swal.fire({
             icon: 'success',
             title: 'Success!',
