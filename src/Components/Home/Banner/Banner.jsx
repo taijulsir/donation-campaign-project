@@ -1,6 +1,7 @@
 
 
 const Banner = () => {
+    
     return (
         <div className="mb-[100px]">
         <div className="hero h-[600px] -mt-[108px]  "  style={{backgroundImage: 'url(https://i.ibb.co/tPz3tK9/Rectangle-4281.png?fbclid=IwAR2NBwfDCkiqEsYvwH7XU4DncCodQZZ34f3ILeWty0nbKGW4r4MPa7atIfU)'}}>

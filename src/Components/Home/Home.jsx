@@ -5,6 +5,7 @@ import DonationCard from "./DonationCard.jsx/DonationCard";
 
 const Home = () => {
     const donations = useLoaderData();
+    
     return (
         <div>
            <Banner></Banner> 
