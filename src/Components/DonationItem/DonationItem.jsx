@@ -32,7 +32,7 @@ const DonationItem = () => {
         }
         </div>
 
-        <div className={donationLength === donations.length  && 'hidden'}>
+        <div className={ donationLength === donations.length ? 'hidden' : ''}>
            <div className="text-center mt-10">
            <button onClick={() => setDonationLength(donations.length)} className="btn btn-primary" > See All</button>
            </div>
