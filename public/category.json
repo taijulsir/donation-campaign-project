@@ -1,0 +1,135 @@
+[
+    {
+      
+      "id": 1,
+      "picture": "https://i.ibb.co/2MG6kB7/Healthss.png",
+      "title": "Health for All",
+      "category": "Health",
+      "category_bg_color": "#0052FF",
+      "card_bg_color": "#0052FF",  
+      "text_button_bg_color": "#0052FF",  
+      "description": "Support healthcare initiatives for those in need.",
+      "price": 50
+    },
+    {
+      "id": 2,
+      "picture": "https://i.ibb.co/y0mRyTD/Educations.png",
+      "title": "Empower Education",
+      "category": "Education",
+      "category_bg_color": "#FF444A",
+      "card_bg_color": "#FF444A",  
+      "text_button_bg_color": "#FF444A",   
+      "description": "Help provide quality education to underprivileged children.",
+      "price": 30
+    },
+    {
+      "id": 3,
+      "picture": "https://i.ibb.co/WFkqfzj/cloths.jpg",
+      "title": "Warm Hearts Clothing",
+      "category": "Clothing",
+      "category_bg_color": "#79C23F",
+      "card_bg_color": "#79C23F",   
+      "text_button_bg_color": "#79C23F",   
+      "description": "Donate clothing to those in need during the cold season.",
+      "price": 20
+    },
+    {
+      "id": 4,
+      "picture": "https://i.ibb.co/L1RnmzF/close-up-people-holding-apples-bag.jpg",
+      "title": "Nourish the Needy",
+      "category": "Food",
+      "category_bg_color": "#F87147",   
+      "card_bg_color": "#F87147",   
+      "text_button_bg_color": "#F87147",   
+      "description": "Contribute to providing nutritious meals to the hungry.",
+      "price": 40
+    },
+    {
+      "id": 5,
+      "picture": "https://i.ibb.co/Chj7jXS/food-donations.jpg",
+      "title": "Food for Hope",
+      "category": "Food",
+      "category_bg_color": "#F87147",   
+      "card_bg_color": "#F87147",  
+      "text_button_bg_color": "#F87147",   
+      "description": "Contribute to providing nutritious meals to the hungry.",
+      "price": 30
+    },
+    {
+      "id": 6,
+      "picture": "https://i.ibb.co/ZM6FtNX/clothing.jpg",
+      "title": "Share the Warmth",
+      "category": "Clothing",
+      "category_bg_color": "#79C23F",
+      "card_bg_color": "#79C23F",   
+      "text_button_bg_color": "#79C23F",   
+      "description": "Donate clothing to those in need during the cold season.",
+      "price": 25
+    },
+    {
+      "id": 7,
+      "picture": "https://i.ibb.co/nzZP7yt/education.jpg",
+      "title": "Education Dreams",
+      "category": "Education",
+      "category_bg_color": "#FF444A",
+      "card_bg_color": "#FF444A",   
+      "text_button_bg_color": "#FF444A",   
+      "description": "Help provide quality education to underprivileged children.",
+      "price": 35
+    },
+    {
+      "id": 8,
+      "picture": "https://i.ibb.co/nQ3Qxs4/blood-donation-pack.jpg",
+      "title": "Healthy Tomorrow",
+      "category": "Health",
+      "category_bg_color": "#0052FF",
+      "card_bg_color": "#0052FF",   
+      "text_button_bg_color": "#0052FF",   
+      "description": "Support healthcare initiatives for those in need.",
+      "price": 60
+    },
+    {
+      "id": 9,
+      "picture": "https://i.ibb.co/bHc4BXh/health-donation.webp",
+      "title": "Healing Hands",
+      "category": "Health",
+      "category_bg_color": "#0052FF",
+      "card_bg_color": "#0052FF",  
+      "text_button_bg_color": "#0052FF",  
+      "description": "Support healthcare initiatives for those in need.",
+      "price": 70
+    },
+    {
+      "id": 10,
+      "picture": "https://i.ibb.co/zrWRf2Y/books.jpg",
+      "title": "Bright Minds Initiative",
+      "category": "Education",
+      "category_bg_color": "#FF444A",
+      "card_bg_color": "#FF444A",   
+      "text_button_bg_color": "#FF444A",   
+      "description": "Help provide quality education to underprivileged children.",
+      "price": 25
+    },
+    {
+      "id": 11,
+      "picture": "https://i.ibb.co/g9xSDKn/cloth-center.jpg",
+      "title": "Dress with Dignity",
+      "category": "Clothing",
+      "category_bg_color": "#79C23F",
+      "card_bg_color": "#79C23F",   
+      "text_button_bg_color": "#79C23F",  
+      "description": "Donate clothing to those in need during the cold season.",
+      "price": 15
+    },
+    {
+      "id": 12,
+      "picture": "https://i.ibb.co/0MdWPn7/food-danation.webp",
+      "title": "Feeding Families",
+      "category": "Food",
+      "category_bg_color": "#F87147",   
+      "card_bg_color": "#F87147",   
+      "text_button_bg_color": "#F87147",   
+      "description": "Contribute to providing nutritious meals to the hungry.",
+      "price": 50
+    }
+  ]
