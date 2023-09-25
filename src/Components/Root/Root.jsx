@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 
 const Root = () => {
     return (
-        <div className="container mx-auto">
+        <div>
             <Layout></Layout>
             <Outlet></Outlet>
         </div>
