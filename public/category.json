@@ -8,7 +8,7 @@
       "category_bg_color": "#0052FF",
       "card_bg_color": "#0052FF",  
       "text_button_bg_color": "#0052FF",  
-      "description": "Support healthcare initiatives for those in need.",
+      "description": "Support healthcare initiatives for those in need. Your contribution will help provide essential medical services and improve the health and well-being of vulnerable individuals and communities. Join us in making a difference today by ensuring access to quality healthcare for all, regardless of their circumstances. Together, we can create a healthier future.",
       "price": 50
     },
     {
@@ -19,7 +19,8 @@
       "category_bg_color": "#FF444A",
       "card_bg_color": "#FF444A",  
       "text_button_bg_color": "#FF444A",   
-      "description": "Help provide quality education to underprivileged children.",
+      "description": "Help provide quality education to underprivileged children. Your donation will support educational programs, provide learning resources, and create opportunities for young minds to flourish. By empowering education, you empower dreams and unlock a brighter future. Join us in making a lasting impact in the lives of these children."
+      ,
       "price": 30
     },
     {
@@ -30,7 +31,7 @@
       "category_bg_color": "#79C23F",
       "card_bg_color": "#79C23F",   
       "text_button_bg_color": "#79C23F",   
-      "description": "Donate clothing to those in need during the cold season.",
+      "description": "Donate clothing to those in need during the cold season. Your contribution will provide warmth and comfort to individuals facing harsh weather conditions. Join us in spreading warmth and love to the less fortunate. Together, we can make a difference one warm heart at a time.",
       "price": 20
     },
     {
@@ -41,7 +42,7 @@
       "category_bg_color": "#F87147",   
       "card_bg_color": "#F87147",   
       "text_button_bg_color": "#F87147",   
-      "description": "Contribute to providing nutritious meals to the hungry.",
+      "description": "Contribute to providing nutritious meals to the hungry. Your donation will help alleviate hunger and food insecurity in our communities. Together, we can make sure that no one goes to bed hungry, and every meal becomes a symbol of hope and nourishment.",
       "price": 40
     },
     {
@@ -52,7 +53,7 @@
       "category_bg_color": "#F87147",   
       "card_bg_color": "#F87147",  
       "text_button_bg_color": "#F87147",   
-      "description": "Contribute to providing nutritious meals to the hungry.",
+      "description": "Contribute to providing nutritious meals to the hungry. Your donation will help alleviate hunger and food insecurity in our communities. Together, we can make sure that no one goes to bed hungry, and every meal becomes a symbol of hope and nourishment.",
       "price": 30
     },
     {
@@ -63,7 +64,8 @@
       "category_bg_color": "#79C23F",
       "card_bg_color": "#79C23F",   
       "text_button_bg_color": "#79C23F",   
-      "description": "Donate clothing to those in need during the cold season.",
+      "description": "Donate clothing to those in need during the cold season. Your contribution will provide warmth and comfort to individuals facing harsh weather conditions. Join us in spreading warmth and love to the less fortunate. Together, we can make a difference one warm heart at a time."
+      ,
       "price": 25
     },
     {
@@ -74,7 +76,8 @@
       "category_bg_color": "#FF444A",
       "card_bg_color": "#FF444A",   
       "text_button_bg_color": "#FF444A",   
-      "description": "Help provide quality education to underprivileged children.",
+      "description": "Help provide quality education to underprivileged children. Your donation will support educational programs, provide learning resources, and create opportunities for young minds to flourish. By empowering education, you empower dreams and unlock a brighter future. Join us in making a lasting impact in the lives of these children."
+      ,
       "price": 35
     },
     {
@@ -85,7 +88,8 @@
       "category_bg_color": "#0052FF",
       "card_bg_color": "#0052FF",   
       "text_button_bg_color": "#0052FF",   
-      "description": "Support healthcare initiatives for those in need.",
+      "description": "Support healthcare initiatives for those in need. Your contribution will help provide essential medical services and improve the health and well-being of vulnerable individuals and communities. Join us in making a difference today by ensuring access to quality healthcare for all, regardless of their circumstances. Together, we can create a healthier future."
+      ,
       "price": 60
     },
     {
@@ -96,7 +100,8 @@
       "category_bg_color": "#0052FF",
       "card_bg_color": "#0052FF",  
       "text_button_bg_color": "#0052FF",  
-      "description": "Support healthcare initiatives for those in need.",
+      "description": "Support healthcare initiatives for those in need. Your contribution will help provide essential medical services and improve the health and well-being of vulnerable individuals and communities. Join us in making a difference today by ensuring access to quality healthcare for all, regardless of their circumstances. Together, we can create a healthier future."
+      ,
       "price": 70
     },
     {
@@ -107,7 +112,8 @@
       "category_bg_color": "#FF444A",
       "card_bg_color": "#FF444A",   
       "text_button_bg_color": "#FF444A",   
-      "description": "Help provide quality education to underprivileged children.",
+      "description": "Help provide quality education to underprivileged children. Your donation will support educational programs, provide learning resources, and create opportunities for young minds to flourish. By empowering education, you empower dreams and unlock a brighter future. Join us in making a lasting impact in the lives of these children."
+      ,
       "price": 25
     },
     {
@@ -118,7 +124,7 @@
       "category_bg_color": "#79C23F",
       "card_bg_color": "#79C23F",   
       "text_button_bg_color": "#79C23F",  
-      "description": "Donate clothing to those in need during the cold season.",
+      "description": "Donate clothing to those in need during the cold season. Your contribution will provide warmth and comfort to individuals facing harsh weather conditions. Join us in spreading warmth and love to the less fortunate. Together, we can make a difference one warm heart at a time.",
       "price": 15
     },
     {
@@ -129,7 +135,8 @@
       "category_bg_color": "#F87147",   
       "card_bg_color": "#F87147",   
       "text_button_bg_color": "#F87147",   
-      "description": "Contribute to providing nutritious meals to the hungry.",
+      "description": "Contribute to providing nutritious meals to the hungry. Your donation will help alleviate hunger and food insecurity in our communities. Together, we can make sure that no one goes to bed hungry, and every meal becomes a symbol of hope and nourishment."
+      ,
       "price": 50
     }
   ]
