@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredDonationItem } from "../Utility/localstorage";
-import { PieChart, Pie, Cell, Tooltip } from 'recharts';
+import { PieChart, Pie, Cell, } from 'recharts';
 
 const Statistics = () => {
     const statiticsData = useLoaderData()
@@ -16,6 +16,19 @@ const Statistics = () => {
 
   const totalItemsSum = statiticsData.reduce((total, statistics) => total + statistics.price, 0);
   const totalLocalStorageSum = sumLocalStorageItems();
+
+  const RADIAN = Math.PI / 180;
+const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+      {`${(percent * 100).toFixed(0)}%`}
+    </text>
+  );
+};
   
     
   console.log(totalItemsSum,totalLocalStorageSum)
@@ -26,25 +39,32 @@ const Statistics = () => {
         setDonationPrice(donation)
        }
     },[statiticsData])
+
+
+   
     return (
         <div className="flex flex-col items-center justify-center mt-20">
+       
         <PieChart width={400} height={400}>
           <Pie
-            data={[
+             data={[
               { name: 'Total Donation', value: totalItemsSum, },
               { name: 'Distribute Donation', value: totalLocalStorageSum, },
             ]}
             cx="50%"
             cy="50%"
-            outerRadius={80}
+            labelLine={false}
+            label={renderCustomizedLabel}
+            outerRadius={150}
             fill="#8884d8"
-            label
+            dataKey="value"
           >
+            
             <Cell fill="#FF444A" />
             <Cell fill="#00C49F" />
           </Pie>
-         <Tooltip></Tooltip>
         </PieChart>
+        
 
         <div>
             <h3 className="flex flex-row gap-10">
@@ -54,6 +74,7 @@ const Statistics = () => {
         </div>
       </div>
     );
+    
 };
 
 export default Statistics;
