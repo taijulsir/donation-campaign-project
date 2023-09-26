@@ -6,6 +6,7 @@ const DonationItem = () => {
     const donations = useLoaderData();
     const [allDonationItem,setAllDonationItem] = useState([])
     const [donationLength,setDonationLength] = useState(4)
+    const [allClicked,setAllClicked] = useState(false)
     useEffect(()=>{
         const donatinIds = getStoredDonationItem();
         if(donatinIds.length>0){
@@ -13,6 +14,11 @@ const DonationItem = () => {
             setAllDonationItem(donation)
         }
     },[donations])
+
+    const handleSeeAllBtn = () => {
+        setDonationLength(allDonationItem.length)
+        setAllClicked(true)
+    }
     return (
         <div className="container mx-auto">
              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
@@ -32,9 +38,9 @@ const DonationItem = () => {
         }
         </div>
 
-        <div className={ donationLength === donations.length ? 'hidden' : ''}>
+        <div className={ allDonationItem.length >4 && !allClicked ? '' : 'hidden'}>
            <div className="text-center mt-10">
-           <button onClick={() => setDonationLength(donations.length)} className="btn bg-[#009444] text-white" > See All</button>
+           <button onClick={handleSeeAllBtn} className="btn bg-[#009444] text-white" > See All</button>
            </div>
         </div>
     </div>

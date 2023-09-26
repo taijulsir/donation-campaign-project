@@ -68,8 +68,8 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
         <div>
             <div className="flex flex-row gap-10">
-                <p className="text-xl font-medium">Your Donation: <span className="bg-[#00C49F] text-white">{totalLocalStorageSum}</span> $</p>
-                <p className="text-xl font-medium">Total Donation: <span className="bg-[#FF444A] text-white">{totalItemsSum}</span> $ </p>
+                <p className="text-xl font-medium bg-[#00C49F] ">Your Donation: <span className=" text-white">{totalLocalStorageSum}</span> $</p>
+                <p className="text-xl font-medium bg-[#FF444A]">Total Donation: <span className=" text-white">{totalItemsSum}</span> $ </p>
             </div>
         </div>
       </div>
