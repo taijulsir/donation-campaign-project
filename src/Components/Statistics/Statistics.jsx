@@ -18,7 +18,7 @@ const Statistics = () => {
   const totalLocalStorageSum = sumLocalStorageItems();
 
   const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -67,10 +67,10 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
         
 
         <div>
-            <h3 className="flex flex-row gap-10">
-                <span>Your Donation: <span className="bg-[#00C49F] text-white">{totalLocalStorageSum}</span> $</span>
-                <span>Total Donation: <span className="bg-[#FF444A] text-white">{totalItemsSum}</span> $ </span>
-            </h3>
+            <div className="flex flex-row gap-10">
+                <p className="text-xl font-medium">Your Donation: <span className="bg-[#00C49F] text-white">{totalLocalStorageSum}</span> $</p>
+                <p className="text-xl font-medium">Total Donation: <span className="bg-[#FF444A] text-white">{totalItemsSum}</span> $ </p>
+            </div>
         </div>
       </div>
     );
