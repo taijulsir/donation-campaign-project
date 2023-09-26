@@ -64,16 +64,15 @@ const Statistics = () => {
         
 
         <div>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row lg:gap-5 md:gap-5 gap-2">
                 
                 <p className="text-xl font-medium ">Your Donation </p>
-                <div className="w-[100px] bg-[#00C49F] "></div>
+                <div className="lg:w-[100px] md:w-[50px] w-5 bg-[#00C49F] "></div>
                 <p className="text-xl font-medium ">Total Donation</p>
-                <div className="w-[100px] bg-[#FF444A]"></div>
+                <div className="lg:w-[100px] md:w-[50px] w-5 bg-[#FF444A]"></div>
 
             </div>
         </div>
-        
       </div>
     );
     
