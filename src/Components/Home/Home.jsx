@@ -8,8 +8,7 @@ import { useState } from "react";
 const Home = () => {
     const donations = useLoaderData();
     const [searchItem,setSearchItem] = useState('');
-    // const [showCards,setShowCards] = useState('');
-    const filterData = donations?.filter((item) => {
+    const filterCardData = donations?.filter((item) => {
         if(item && item.category){
             return item.category.toLowerCase().includes(searchItem.toLowerCase());
         }
@@ -19,7 +18,7 @@ const Home = () => {
            <Banner donations = {donations} searchItem={searchItem} setSearchItem={setSearchItem}></Banner> 
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto">
                 {
-                    filterData.map(donation => <DonationCard key={donation.id} donation = {donation} ></DonationCard>)
+                    filterCardData.map(donation => <DonationCard key={donation.id} donation = {donation} ></DonationCard>)
                 }
             </div>
         </div>
