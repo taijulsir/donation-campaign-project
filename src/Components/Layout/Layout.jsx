@@ -5,13 +5,13 @@ const Layout = () => {
   
         const links = <>
         <li><NavLink to='/'  className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-red-600 font-medium underline" : ""
+        isPending ? "pending" : isActive ? "text-red-600 text-lg font-bold underline" : ""
       } >Home</NavLink></li>
         <li><NavLink to='/donation'  className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-red-600 font-medium underline" : ""
+        isPending ? "pending" : isActive ? "text-red-600 text-lg font-bold underline" : ""
       } >Donation</NavLink></li>
         <li><NavLink to='/statistics'  className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-red-600 font-medium underline" : ""
+        isPending ? "pending" : isActive ? "text-red-600 text-lg font-bold underline" : ""
       } >Statistics</NavLink></li>
         
         </>

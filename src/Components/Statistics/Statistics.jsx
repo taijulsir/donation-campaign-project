@@ -5,22 +5,27 @@ import { PieChart, Pie, Cell, } from 'recharts';
 
 const Statistics = () => {
     const statiticsData = useLoaderData()
-    const [donationPrice,setDonationPrice] = useState([]);
+    const [donationLength,setdonationLength] = useState([]);
     useEffect(()=>{
       const donationIds = getStoredDonationItem();
        if(donationIds.length >0) {
         const donation = statiticsData.filter ( donationItem => donationIds.includes(donationItem.id))
-        setDonationPrice(donation)
+        setdonationLength(donation)
        }
     },[statiticsData])
     
   const sumLocalStorageItems = () => {
-    const sum = donationPrice.reduce((total, item) => total + item.price, 0);
-    return sum;
+    const donation = donationLength.length;
+    return donation;
   };
-  
-    const totalItemsSum = statiticsData.reduce((total, statistics) => total + statistics.price, 0);
+
+    
+    const totalItemsSum = statiticsData.length;
     const totalLocalStorageSum = sumLocalStorageItems();
+    
+    const localstoragePercentage = (totalLocalStorageSum / totalItemsSum) * 1000;
+
+    const mychart = 1000 - localstoragePercentage;
 
     const RADIAN = Math.PI / 180;
     const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
@@ -30,7 +35,7 @@ const Statistics = () => {
     
       return (
         <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-          {`${(percent * 100).toFixed(0)}%`}
+          {`${(percent * 100).toFixed(1)}%`}
         </text>
       );
     };
@@ -41,8 +46,8 @@ const Statistics = () => {
         <PieChart width={400} height={400}>
           <Pie
              data={[
-              { name: 'Total Donation', value: totalItemsSum, },
-              { name: 'Distribute Donation', value: totalLocalStorageSum, },
+              { name: 'Total Donation', value: mychart, },
+              { name: 'Distribute Donation', value: localstoragePercentage, },
             ]}
             cx="50%"
             cy="50%"
@@ -60,9 +65,13 @@ const Statistics = () => {
         
 
         <div>
-            <div className="flex flex-row gap-10">
-                <p className="text-xl font-medium bg-[#00C49F] ">Your Donation: <span className=" text-white">{totalLocalStorageSum}</span> $</p>
-                <p className="text-xl font-medium bg-[#FF444A]">Total Donation: <span className=" text-white">{totalItemsSum}</span> $ </p>
+            <div className="flex flex-row gap-5">
+                
+                <p className="text-xl font-medium ">Your Donation </p>
+                <div className="w-[100px] bg-[#00C49F] "></div>
+                <p className="text-xl font-medium ">Total Donation</p>
+                <div className="w-[100px] bg-[#FF444A]"></div>
+
             </div>
         </div>
       </div>
