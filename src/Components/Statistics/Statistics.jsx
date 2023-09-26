@@ -14,18 +14,17 @@ const Statistics = () => {
        }
     },[statiticsData])
     
-  const sumLocalStorageItems = () => {
+  const LocalStorageItems = () => {
     const donation = donationLength.length;
     return donation;
   };
 
     
-    const totalItemsSum = statiticsData.length;
-    const totalLocalStorageSum = sumLocalStorageItems();
+    const totalItems = statiticsData.length;
+    const totalLocalStorageItems = LocalStorageItems();
     
-    const localstoragePercentage = (totalLocalStorageSum / totalItemsSum) * 1000;
-
-    const mychart = 1000 - localstoragePercentage;
+    const yourDonationPercentage = (totalLocalStorageItems / totalItems) * 1000;
+    const totalDonationPercentage = 1000 - yourDonationPercentage;
 
     const RADIAN = Math.PI / 180;
     const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
@@ -46,8 +45,8 @@ const Statistics = () => {
         <PieChart width={400} height={400}>
           <Pie
              data={[
-              { name: 'Total Donation', value: mychart, },
-              { name: 'Distribute Donation', value: localstoragePercentage, },
+              { name: 'Total Donation', value: totalDonationPercentage, },
+              { name: 'Distribute Donation', value: yourDonationPercentage, },
             ]}
             cx="50%"
             cy="50%"
@@ -74,6 +73,7 @@ const Statistics = () => {
 
             </div>
         </div>
+        
       </div>
     );
     
