@@ -6,41 +6,34 @@ import { PieChart, Pie, Cell, } from 'recharts';
 const Statistics = () => {
     const statiticsData = useLoaderData()
     const [donationPrice,setDonationPrice] = useState([]);
-    
-
-  // Sum the prices of the selected items in local storage
-  const sumLocalStorageItems = () => {
-    const sum = donationPrice.reduce((total, item) => total + item.price, 0);
-    return sum;
-  };
-
-  const totalItemsSum = statiticsData.reduce((total, statistics) => total + statistics.price, 0);
-  const totalLocalStorageSum = sumLocalStorageItems();
-
-  const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
-  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-  const x = cx + radius * Math.cos(-midAngle * RADIAN);
-  const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
-  return (
-    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-      {`${(percent * 100).toFixed(0)}%`}
-    </text>
-  );
-};
-  
-    
-  console.log(totalItemsSum,totalLocalStorageSum)
     useEffect(()=>{
-      const  donationIds = getStoredDonationItem();
+      const donationIds = getStoredDonationItem();
        if(donationIds.length >0) {
         const donation = statiticsData.filter ( donationItem => donationIds.includes(donationItem.id))
         setDonationPrice(donation)
        }
     },[statiticsData])
+    
+  const sumLocalStorageItems = () => {
+    const sum = donationPrice.reduce((total, item) => total + item.price, 0);
+    return sum;
+  };
+  
+    const totalItemsSum = statiticsData.reduce((total, statistics) => total + statistics.price, 0);
+    const totalLocalStorageSum = sumLocalStorageItems();
 
-
+    const RADIAN = Math.PI / 180;
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+      const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+      const x = cx + radius * Math.cos(-midAngle * RADIAN);
+      const y = cy + radius * Math.sin(-midAngle * RADIAN);
+    
+      return (
+        <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+          {`${(percent * 100).toFixed(0)}%`}
+        </text>
+      );
+    };
    
     return (
         <div className="flex flex-col items-center justify-center mt-20">
